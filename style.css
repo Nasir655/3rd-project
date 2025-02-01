@@ -1,0 +1,108 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+body {
+  background-color: hsl(0, 0%, 95%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 327px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card {
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sedan-card {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.suvs-card {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.luxury-card {
+  background-color: hsl(179, 100%, 13%);
+}
+
+
+img{
+  width: 65px;
+  height: auto;
+}
+
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 40px;
+  text-transform: uppercase;
+  margin: 35px 0;
+  color: hsl(0, 0%, 95%);
+}
+
+p {
+  line-height: 1.6;
+  color: hsla(0, 0%, 100%, 0.75);
+  margin-bottom: 25px; 
+}
+
+.learn-button {
+  border-radius: 25px;
+  border: 2px solid hsl(0, 0%, 95%);
+  background-color: hsl(0, 0%, 95%);
+  padding: 10px 20px;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  cursor: pointer;
+  width: 146px;
+}
+
+.sedan-card .learn-button {
+  color: hsl(31, 77%, 52%);
+}
+
+.suvs-card .learn-button {
+  color: hsl(184, 100%, 22%);
+}
+
+.luxury-card .learn-button {
+  color: hsl(179, 100%, 13%);
+}
+
+.learn-button:hover {
+  background-color: transparent;
+  color: hsl(0, 0%, 95%);
+}
+
+/* Desktop Styles */
+@media (min-width: 768px) {
+  .container {
+      flex-direction: row;
+      max-width: 920px; /* Desktop width */
+  }
+
+  .card {
+      flex: 1; /* Each card takes equal space */
+  }
+
+  p {
+      margin-bottom: 80px;
+  }
+}
