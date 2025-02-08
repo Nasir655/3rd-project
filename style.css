@@ -1,9 +1,9 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
+
 body {
   background-color: hsl(0, 0%, 95%);
   min-height: 100vh;
@@ -43,8 +43,7 @@ body {
   background-color: hsl(179, 100%, 13%);
 }
 
-
-img{
+img {
   width: 65px;
   height: auto;
 }
@@ -60,7 +59,7 @@ h1 {
 p {
   line-height: 1.6;
   color: hsla(0, 0%, 100%, 0.75);
-  margin-bottom: 25px; 
+  margin-bottom: 25px;
 }
 
 .learn-button {
@@ -94,15 +93,15 @@ p {
 /* Desktop Styles */
 @media (min-width: 768px) {
   .container {
-      flex-direction: row;
-      max-width: 920px; /* Desktop width */
+    flex-direction: row;
+    max-width: 920px;
   }
 
   .card {
-      flex: 1; /* Each card takes equal space */
+    flex: 1;
   }
 
   p {
-      margin-bottom: 80px;
+    margin-bottom: 80px;
   }
 }
